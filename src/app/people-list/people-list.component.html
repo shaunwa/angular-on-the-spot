@@ -1,0 +1,5 @@
+<div *ngFor="let person of people; index as i">
+    <h3>{{ i + 1 }}. {{ person.name }}</h3>
+    <p>Age: {{ person.age }}</p>
+    <button (click)="onPersonClicked(person.name)">Click me!</button>
+</div>

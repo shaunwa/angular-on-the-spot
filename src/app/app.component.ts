@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-app';
+    person = { name: 'Bert', age: 10 };
+    myClass = "main-page-hello"
+    selectedPersonName = null;
+
+    setSelectedPerson(name) {
+        this.selectedPersonName = name;
+    }
 }

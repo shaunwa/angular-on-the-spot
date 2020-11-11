@@ -1,0 +1,5 @@
+<h3>Hello there, {{ person.name }}!</h3>
+<p *ngIf="person.age; else elseBlock">You are {{ person.age }} years old!</p>
+<ng-template #elseBlock>
+    <p>We don't have your age yet!</p>
+</ng-template>
